@@ -1,0 +1,11 @@
+# Don't look for favicon.ico
+Redirect 404 /favicon.ico
+
+# Turns on the engine.
+RewriteEngine On
+
+# Sets where to send all the rewrites.
+RewriteBase /
+
+# Send anything to index.php
+RewriteRule . index.php
