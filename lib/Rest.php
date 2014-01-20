@@ -47,7 +47,7 @@
             if (isset($this->request)) {
                 // Automatically call the function desired
                 switch ($this->method) {
-                    case 'PUT':
+                    case 'POST':
                         $this->createObject();
                     break;
 
@@ -60,7 +60,7 @@
                         }
                     break;
 
-                    case 'POST':
+                    case 'PUT':
                         if (isset($id)) {
                             $this->updateObject($id);
                         } else {

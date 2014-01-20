@@ -13,9 +13,9 @@ There are a couple of objects available you can interact with:
 
 The available methods to access the objects are:
 
-	- PUT: Creates a new instance of the object (No ID need since it will be returned)
+	- POST: Creates a new instance of the object (No ID need since it will be returned)
 	- GET: Retrieves information about the object
-	- POST: Updates the information inside the object
+	- PUT: Updates the information inside the object
 	- DELETE: Deletes the object
 
 ## Queries' bodies
@@ -44,7 +44,7 @@ The source code comes with two persons and one team preloaded
 Create a new person:
 
 	URL: http://<hostname>/personController/
-	Method: PUT
+	Method: POST
 	Body: {
 		"name": "John",
 		"surname": "Lennon",
@@ -60,7 +60,7 @@ Show person information:
 Update a team:
 
 	URL: http://<hostname>/teamController/1388791552
-	Method: POST
+	Method: PUT
 	Body: {
 		"members": [1388791496,1388791507]
 	}
